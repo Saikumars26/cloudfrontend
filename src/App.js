@@ -5,7 +5,7 @@ function App() {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    fetch('https://clouddevbackend-e9f7g2h3hdhrbpde.centralus-01.azurewebsites.net/api/students')
+    fetch('https://dbwebsite-fre9ehg0fycxendt.centralus-01.azurewebsites.net/api/students')
       .then(res => res.json())
       .then(data => setStudents(data))
       .catch(err => console.error('Error fetching students:', err));
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Student List</h1>
+      <h1>Student List for sheri</h1>
       <table border="1" cellPadding="10">
         <thead>
           <tr>
